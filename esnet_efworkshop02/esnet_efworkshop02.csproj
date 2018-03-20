@@ -32,8 +32,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,11 +53,118 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlTable.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerContact.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DafestyModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DafestyModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DafestyModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DafestyModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DafestyModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Documentaries.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesBackup.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormEF_Practice2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEF_Practice2.Designer.cs">
+      <DependentUpon>FormEF_Practice2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIssueTranWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIssueTranWorkshop.Designer.cs">
+      <DependentUpon>FormIssueTranWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IssueTran.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCategories.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Movies.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Producers.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProducerWebSite.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalaryHistory.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustment.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs" />
+    <Compile Include="UserMaster.cs">
+      <DependentUpon>DafestyModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <EntityDeploy Include="DafestyModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DafestyModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DafestyModel.edmx.diagram">
+      <DependentUpon>DafestyModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormEF_Practice2.resx">
+      <DependentUpon>FormEF_Practice2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIssueTranWorkshop.resx">
+      <DependentUpon>FormIssueTranWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DafestyModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DafestyModel.Context.cs</LastGenOutput>
+      <DependentUpon>DafestyModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DafestyModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DafestyModel.edmx</DependentUpon>
+      <LastGenOutput>DafestyModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
