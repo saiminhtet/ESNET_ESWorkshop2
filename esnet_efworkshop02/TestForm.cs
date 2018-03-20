@@ -13,7 +13,7 @@ namespace esnet_efworkshop02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormEF_Practice2());
+            Application.Run(new FormIssueTranWorkshop());
 
             Environment.Exit(0);
         }

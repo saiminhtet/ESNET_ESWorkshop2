@@ -17,7 +17,6 @@ namespace esnet_efworkshop02
         Customers c;
         static string oldName, oldRating, newName, newRating;
         int currpos;
-        
 
         public FormEF_Practice2()
         {

@@ -12,6 +12,11 @@ namespace esnet_efworkshop02
 {
     public partial class FormIssueTranWorkshop : Form
     {
+        DafestyNewEntities ctx = new DafestyNewEntities();
+        List<IssueTran> q;
+        IssueTran c;
+        int currpos;
+
         public FormIssueTranWorkshop()
         {
             InitializeComponent();
