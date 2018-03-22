@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Google Drive\Reference Info\NUS ISS GDipSA\source\repos\esnet_efworkshop02\esnet_efworkshop02\DafestyModel.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\ISS NUS\Semister 2 Lectures\Lecture Slides\ESNET\Workshops\From Sam\esnet_efworkshop02\esnet_efworkshop02\DafestyModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
